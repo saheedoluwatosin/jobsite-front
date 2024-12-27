@@ -1,0 +1,156 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+h1 {
+    display: inline;
+}
+
+h2 {
+    color: #333;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Job Card Styles */
+#job-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.job-card {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.job-card:hover {
+    transform: translateY(-10px);
+}
+
+.job-card h3 {
+    margin: 0;
+    color: #333;
+}
+
+.job-card p {
+    color: #555;
+}
+
+.job-card button {
+    margin-top: 10px;
+    background-color: #28a745;
+    border-radius: 5px;
+}
+
+/* Job Details Page Styles */
+#job-details {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.job-detail-container h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.job-detail-container p {
+    color: #555;
+    font-size: 1.1em;
+}
+
+.job-meta {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.back-btn {
+    display: block;
+    margin-top: 30px;
+    background-color: #28a745;
+    width: 100%;
+}
+
+.back-btn:hover {
+    background-color: #218838;
+}
+
+@media (max-width: 768px) {
+    #job-list {
+        grid-template-columns: 1fr;
+    }
+}
+pre {
+    font-family: inherit;  /* Use the same font as the surrounding content */
+    white-space: pre-wrap; /* Ensure long lines wrap instead of overflowing */
+    word-wrap: break-word; /* Break words to prevent overflow */
+    font-size: inherit; /* Use the same font size */
+}
+
+.apply-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.apply-button a {
+    color: white;
+    text-decoration: none;
+}
+
+.apply-button:hover {
+    background-color: #0056b3;
+}

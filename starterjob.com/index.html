@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>StarterJob</h1>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/articles">Articles</a></li>
+                <li><a href="/talk">Talk</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="jobs">
+            <h2>Available Jobs</h2>
+            <div id="job-list">
+                <!-- Job cards will be rendered here -->
+            </div>
+        </section>
+
+        <!-- Job Details Section (Initially Hidden) -->
+        <section id="job-details" style="display: none;">
+            <div class="job-detail-container">
+                <h2 id="job-title"></h2>
+                <p id="company-name"></p>
+                <p id="location"></p>
+                <div id="job-description"></div>
+                <div class="job-meta">
+                    <span id="job-type"></span>
+                </div>
+                <button id="back-to-list" class="back-btn">Back to Job List</button>
+            </div>
+        </section>
+
+        <!-- Back to Job List Button -->
+        <button id="back-to-list" style="display: none;">Back to Job List</button>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
